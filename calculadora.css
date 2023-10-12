@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@keyframes rotacao1 {
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rotacao2 {
+    to{
+        transform: rotate(-360deg);
+    }
+}
+@keyframes rotacao3 {
+    to{
+        transform: rotate(360deg);
+    }
+}
+@font-face {
+    font-family: 'calculator';
+    src: url('Calculator.ttf');
+}
+body{
+    background-image: url('fundo.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+h1{
+    font-family: 'calculator';
+    font-size: 40px;
+    text-indent: 5px;
+}
+#res{
+    word-wrap: break-word;
+    padding: 5px;
+    width: 222px;
+    height: 60px;
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+    text-align: right;
+    margin: 5px;
+    font-size: 20px;
+    padding: 15px;
+    color: rgb(0, 0, 0);
+    font-family:'calculator';
+    background-color: rgb(252, 217, 171);
+   
+    
+}
+
+.calculadora{
+    background-color: rgba(0, 0, 0, 0.918);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    box-shadow:  5px 5px 5px rgba(0, 0, 0, 0.651);
+    border-radius: 5px 5px 0 0;
+}
+.botao{
+    font-family: 'calculator';
+    
+    color: white;
+    background-color: rgb(114, 112, 112);
+    width: 50px;
+    height: 50px;
+    margin: 3px;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.botao:hover{
+    border-radius: none;
+    background-color: black;
+    border: solid white;
+    border-radius: 10px;
+    transition: .8s;
+}
+#zero{
+    width: 106px;
+}
+#igual{
+    height: 106px;
+}
+.color{
+    background-color: rgb(134, 18, 18);
+}
+.color:hover{
+    background-color: rgba(134, 18, 18, 0.425);
+    border: solid white;
+}
+.corDestaque{
+    background-color: orangered;
+}
+.corDestaque:hover{
+    border: solid white;
+    background-color: rgba(255, 68, 0, 0.582);
+}
+.especial{
+    background-color: darkblue;
+}
+#exp{
+    width: 106px;
+}
+#eng1{
+   font-size: 50px;
+   color: white;
+   position: absolute;
+   bottom: 25px;
+   margin-left: 55px;
+   animation: rotacao1 3s infinite;
+   animation-delay: .5s;
+}
+#eng2{
+    font-size: 50px;
+    color: white;
+    position: absolute;
+    bottom: 14px;
+    margin-left: 92px;
+    animation: rotacao2 3s infinite;
+    animation-delay: .8s;
+ }
+ #eng3{
+    font-size: 50px;
+    color: white;
+    position: absolute;
+     bottom: 25px;
+     margin-left: 130px;
+     animation: rotacao3 3s infinite;
+     animation-delay: 1s;
+ }
+ section{
+    display: flex;
+    text-align: center;
+    margin: auto;
+    color: white;
+    width: 153px;
+    margin: auto;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.555);
+    position: absolute;
+    top: 16%;
+    left: 74%;
+    transform: rotate(278deg);
+    background-color: rgba(0, 0, 0, 0.377);
+    font-family: 'calculator';
+}
+section>div{
+   text-align: center;
+   padding: 8px;
+}
+@media screen and (max-width: 768px){
+    h1{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.185);
+    }
+    body{
+        background-image: url('celular.jpg');
+        background-position: bottom center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    
+    }
+    #eng1{
+        color: black;
+    }
+    #eng2{
+        color: black;
+    }
+    #eng3{
+        color: black;
+    }
+    section {
+        transform: rotate(0);
+        font-size: 24px;
+        width: 160px;
+        top: 8%;
+        left: 55%;
+        background-color: rgba(0, 0, 0, 0.349);
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.664);
+}
+ }
+@media screen and (min-width:769px) and (max-width: 992px){
+    body{
+        background-image: url('tablet.jpg');
+        background-position: center left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    
+    }
+    h1{
+        color: white;
+    }
+    section {
+        transform: rotate(0);
+        font-size: 34px;
+        width: 160px;
+    }
+}

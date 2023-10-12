@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    
+  
+</head>
+<body>
+    <span class="material-symbols-outlined" id="eng1">
+        settings
+        </span>
+        <span class="material-symbols-outlined" id="eng2">
+            settings
+            </span><span class="material-symbols-outlined" id="eng3">
+                settings
+                </span>
+<div class="fundo">
+    <h1>Calculadora</h1>
+    <div class="calculadora">
+      
+    <p id="res">
+       
+    </p>
+    <table>
+            
+        <tr>
+            <td><button class="botao color" id="del"onclick="back()">Del</button></td>
+            <td><button class="botao color" id="ac" onclick="clean()">AC</button></td>
+            <td><button class="botao corDestaque"  onclick="insert('*')">X</button></td>
+            <td><button class="botao corDestaque"  onclick="insert('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button class="botao" onclick="insert('7')">7</button></td> 
+            <td><button class="botao" onclick="insert('8')">8</button></td>
+            <td><button class="botao" onclick="insert('9')">9</button></td>
+            <td><button class="botao corDestaque"  onclick="insert('-')">-</button></td>
+            
+        </tr>
+        <tr>
+            <td><button class="botao" onclick="insert('4')">4</button></td>
+            <td><button class="botao" onclick="insert('5')">5</button></td>
+            <td><button class="botao" onclick="insert('6')">6</button></td>
+            <td><button class="botao corDestaque"  onclick="insert('+')">+</button></td>
+            
+        </tr>
+        <tr>
+            <td><button class="botao" onclick="insert('1')">1</button></td>
+            <td><button class="botao" onclick="insert('2')">2</button></td>
+            <td><button class="botao" onclick="insert('3')">3</button></td>
+            <td rowspan="2"><button class="botao corDestaque" id="igual" onclick="calcular()">=</button></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button class="botao" id="zero" onclick="insert('0')">0</button></td>
+            <td><button class="botao" onclick="insert('.')">.</button></td>
+        </tr>
+        <tr >
+            <td colspan="2"><button class="botao especial"  onclick="insert('**')" id="exp">Exp</button></td>
+            <td><button class="botao especial" onclick="insert('(')">(</button ></td>
+            <td><button class="botao especial"   onclick="insert(')')">)</button > </td>
+        </tr>
+    </table>
+</div>
+</div>
+
+    <section>
+        <div id="horas">
+            00
+        </div>
+        <div>:</div>
+        <div id="minutos">
+            00
+          
+        </div>
+        <div>:</div>
+        <div id="segundos">
+            00
+        </div>
+    </section>
+
+<script src="calculadora.js"></script>
+</body>
+</html>
